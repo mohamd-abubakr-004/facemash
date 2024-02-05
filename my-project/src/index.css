@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'poppins';
+    src: url('./assets/font/Poppins-Regular.ttf');
+}
+
+@media screen and (min-width: 1920px) {
+    body {
+        zoom: 120%
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    body {
+        zoom: 160%
+    }
+}
+
+@media screen and (min-width: 3840px) {
+    body {
+        zoom: 180%
+    }
+}

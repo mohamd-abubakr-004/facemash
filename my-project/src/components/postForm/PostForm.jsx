@@ -19,6 +19,10 @@ const PostForm = ({ postData }) => {
 
     const navigate = useNavigate()
 
+    const [error, setError] = useState('')
+
+    const [user, setUser] = useState('')
+
     useEffect(() => {
         authenticationServices.getUser().then((data) => {
             setUserID(data.$id)

@@ -4,6 +4,7 @@ const all_ENV = {
     appWriteDataBaseId : String(import.meta.env.VITE_APPWRITE_DATABASE_ID),
     appWriteCollectionId : String(import.meta.env.VITE_APPWRITE_COLLECTION_ID),
     appWriteStorageId : String(import.meta.env.VITE_APPWRITE_STORAGE_ID),
+    appWriteAllUserIdCollection : String(import.meta.env.VITE_APPWRITE_USERS_COLLECTION_ID),
 }
 
 export default all_ENV

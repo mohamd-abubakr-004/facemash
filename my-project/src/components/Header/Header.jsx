@@ -10,7 +10,7 @@ function Header() {
 
     const navitems = [
         { name: 'Home', url: '/', active: true },
-        { name: 'Contect', url: '/contect', active: authStatus },
+        { name: 'Messenger', url: '/messenger', active: authStatus },
         { name: 'Account', url: '/account', active: authStatus },
         { name: 'Add Post', url: '/add-post', active: authStatus },
     ]
@@ -19,15 +19,6 @@ function Header() {
         { name: 'Sign In', url: '/sign-in', active: !authStatus },
         { name: 'Sign Up', url: '/sign-up', active: !authStatus },
     ]
-
-    {/* <li key={item.name}>
-                                        <NavLink
-                                            className={({ isActive }) => `${isActive ? 'text-active' : 'text-text-color'} text-base font-poppins hover:tracking-[1px] de `}
-                                            to={item.url}
-                                        >
-                                            {item.name}
-                                        </NavLink>
-                                    </li> */}
 
     return (
         <>

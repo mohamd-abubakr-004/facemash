@@ -1,13 +1,10 @@
 import React from 'react'
-
-import { Container, PostForm } from '../components/index'
+import {PostForm} from '../components/index'
 
 const AddPost = () => {
     return (
-        <div>
-            <Container>
-                <PostForm postData={null} />
-            </Container>
+        <div className=' bg-[#262626]'>
+            <PostForm />
         </div>
     )
 }

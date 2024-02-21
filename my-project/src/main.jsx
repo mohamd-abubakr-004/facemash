@@ -15,6 +15,8 @@ import AccountPage from './pages/AccountPage.jsx'
 import AddPost from './pages/AddPost.jsx'
 import EditPost from './pages/EditPost.jsx'
 import Post from './pages/Post.jsx'
+import User from './pages/User.jsx'
+import Messenger from './pages/Messenger.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,9 +25,11 @@ const router = createBrowserRouter(
       <Route path="/add-post" element={<AddPost />} />
       <Route path="/edit-post/:postID" element={<EditPost />} />
       <Route path="/post/:postID" element={<Post />} />
+      <Route path="/user/:userID" element={<User />} />
       <Route path="/account" element={<AccountPage />} />
-      <Route path="sign-in" element={<SignIn />} />
-      <Route path="sign-Up" element={<SignUp />} />
+      <Route path="/sign-in" element={<SignIn />} />
+      <Route path="/sign-Up" element={<SignUp />} />
+      <Route path="/messenger" element={<Messenger />} />
     </Route>
   )
 )

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { PostForm, Container } from '../components'
+import { PostForm } from '../components'
 
 import { useParams } from 'react-router-dom'
 
@@ -9,9 +9,9 @@ const EditPost = () => {
     const { postID } = useParams()
 
     return (
-        <Container>
+        <div className='bg-[#262626]'>
             <PostForm postData={postID} />
-        </Container>
+        </div>
     )
 }
 

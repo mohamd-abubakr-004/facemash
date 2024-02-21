@@ -5,6 +5,7 @@ import { Input, Button } from './index'
 import { useForm } from 'react-hook-form'
 
 import authenticationServices from '../appwrite/authentication'
+import ServicesDS from '../appwrite/config'
 
 import { login } from '../store/authSlice'
 
@@ -28,10 +29,12 @@ const SignUp = () => {
             const account = await authenticationServices.createAccount(data)
             if (account) {
                 const loginUser = await authenticationServices.login(data)
-                if(loginUser){
+                if (loginUser) {
                     const currentUser = await authenticationServices.getUser()
-                    if(currentUser){
-                        dispatch(login(currentUser))
+                    console.log(currentUser.name, currentUser.$id);
+                    if (currentUser) {
+                        dispatch(login(currentUser));
+                        await ServicesDS.userAuthengate(currentUser)
                         navigate('/')
                     }
                 }

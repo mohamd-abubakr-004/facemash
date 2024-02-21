@@ -45,6 +45,7 @@ export const authentication = class {
             console.log(`appwrite :: getUser services :: ${error}`);
         }
     }
+    
 }
 
 const authenticationServices = new authentication()

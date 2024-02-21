@@ -13,6 +13,8 @@ import Container from "./container/container";
 import PostForm from "./postForm/PostForm";
 import Account from "./Account";
 import Logined from "./Logined";
+import FaceMashUser from "./FaceMashUser";
+import CommingSoon from "./CommingSoon";
 
 export {
     Header,
@@ -29,5 +31,7 @@ export {
     Logined,
     Account,
     PostForm,
-    Container
+    Container,
+    FaceMashUser,
+    CommingSoon
 }
